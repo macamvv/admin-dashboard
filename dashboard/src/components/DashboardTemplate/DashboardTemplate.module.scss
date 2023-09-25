@@ -1,0 +1,18 @@
+@import 'scss/_variables.scss';
+
+.DashboardTemplate {
+  .StatusHeaderDashboard {
+    @include themify('background-color', 'background-color');
+    @include themify('color', 'font-color');
+  }
+
+  @include themify('background-color', 'background-color-2');
+  [class*='custom-grid'] {
+    @media (min-width: 1700px) {
+      width: 20%;
+    }
+    @media (min-width: 1900px) {
+      width: 16%;
+    }
+  }
+}

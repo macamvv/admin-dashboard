@@ -1,0 +1,7 @@
+@import 'scss/_variables.scss';
+
+.App {
+  min-height: 100vh;
+  position: relative;
+  @include themify('background-color', 'background-color-2');
+}

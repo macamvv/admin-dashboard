@@ -1,0 +1,12 @@
+@import 'scss/_variables.scss';
+
+.MainLayout {
+  @include themify('background', 'background-color');
+  @include themify('border-color', 'secondary');
+  @include themify('color', 'font-color');
+}
+
+[class*='card-header'] {
+  @include themify('background-color', 'background-color');
+  @include themify('border-color', 'secondary');
+}

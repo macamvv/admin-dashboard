@@ -1,0 +1,64 @@
+@import 'scss/_colors.scss';
+
+.HealthStatusCard {
+  border-radius: 8px;
+  text-align: center;
+  height: 200px;
+  width: 300px;
+  color: $black;
+  box-shadow: 2px 2px 2px 2px grey;
+
+  h4 {
+    background-color: transparent;
+
+    @media (max-width: 1300px) {
+      font-size: 18px;
+    }
+    @media (max-width: 400px) {
+      font-size: 12px;
+    }
+  }
+  h5 {
+    @media (max-width: 1300px) {
+      font-size: 14px;
+    }
+    @media (max-width: 400px) {
+      font-size: 9px;
+    }
+  }
+  h3 {
+    @media (max-width: 1300px) {
+      font-size: 16px;
+    }
+    @media (max-width: 400px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.Succes {
+  [class*='card-title'] {
+    background-color: $success;
+    color: $white;
+  }
+}
+
+.Failed {
+  background-color: $black;
+  [class*='card-header'] {
+    color: $danger;
+  }
+  [class*='card-title'] {
+    background-color: $danger;
+    color: $white;
+  }
+  [class*='card-subtitle'] {
+    color: $danger;
+  }
+  [class*='card-text'] {
+    color: $danger;
+  }
+  i {
+    color: $danger;
+  }
+}

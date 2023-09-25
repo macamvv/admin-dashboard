@@ -1,0 +1,23 @@
+@import 'scss/_colors.scss';
+
+.CustomFooter {
+  [class*='nav-item'] {
+    padding-right: 10px !important;
+
+    @media (max-width: 400px) {
+      padding-right: 5px !important;
+      font-size: 12px;
+    }
+  }
+  a {
+    @media (max-width: 400px) {
+      font-size: 12px;
+    }
+  }
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+[class*='container'] {
+  max-width: none !important;
+}
